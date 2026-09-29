@@ -4,6 +4,7 @@
 #########################################
 #########################################
 
+# Commands are conceptual to show pipeline and parameters used
 
 #geNomad, to predict viruses
 sbatch -p base -t 48:00:00 --mem=125000 -J genomad -n 15 --wrap="genomad end-to-end --threads 15 input_fasta genomad_outdir path/to/genomad_db"
